@@ -15,7 +15,7 @@ int diagonal_diff(int a[][max],int n){
 }
 
 int main(){
-    int a[max][max],n,i,j,p_dia=0,s_dia=0,diff;
+    int a[max][max],n,i,j,diff;
     FILE *fp;
     fp=freopen("read.txt","r",stdin);
     scanf("%d",&n);
