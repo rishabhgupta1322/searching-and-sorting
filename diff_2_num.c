@@ -6,7 +6,7 @@ void diff(int a[],int k){
     int i,diff;
     FILE *fp;
     fp=freopen("write.txt","w",stdout);
-    diff=a[k-1]-a[0];
+    diff=a[k]-a[0];
     for(i=1;i<k-1;i++){
         if(diff<a[k]-a[i]){
             diff=a[k]-a[i];
