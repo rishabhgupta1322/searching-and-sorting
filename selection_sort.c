@@ -1,7 +1,7 @@
 #include<stdio.h>
 #include<stdlib.h>
 
-int selection_sort(int a[],int n){
+void selection_sort(int a[],int n){
     int i,j,t,pos;
     for(i=0;i<n;i++){
         t=a[i];
