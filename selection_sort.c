@@ -3,16 +3,18 @@
 
 void selection_sort(int a[],int n){
     int i,j,t,pos;
-    for(i=0;i<n;i++){
-        t=a[i];
+    for(i=0;i<n-1;i++){
+        pos=i;
         for(j=i+1;j<n;j++){
-            if(t>a[j]){
-                t=a[j];
+            if(a[pos]>a[j]){
                 pos=j;
             }
         }
-        a[pos]=a[i];
-        a[i]=t;
+        if(pos!=i){
+            t=a[pos];
+            a[pos]=a[i];
+            a[i]=t;
+        }
     }
 }
 
